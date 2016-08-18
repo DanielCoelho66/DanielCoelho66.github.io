@@ -1,0 +1,285 @@
+@charset "utf-8";
+
+/* START PAGE STYLING */
+body {
+    background-color: #CCC;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 100%;
+    line-height: 1.5em;
+    width: 75%;
+    margin: 0 auto;
+}
+#page {
+    width: 75%;
+    margin: 0 auto; 
+}
+header h1 {
+    font-size: 36px;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding: 3% 0;
+    text-align:center;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+}
+h2 {
+    font-size: 30px;
+    border-bottom: 2px solid black;
+    line-height: 1em;
+    font-weight: bold;
+}
+h3 {
+    font-size: 20px;	
+}
+dfn {
+    font-style: normal;
+}
+section p {
+    padding: 5px;
+    float: left;
+}
+section ul {
+    width: 10%;
+    clear: both;
+    margin: 0 auto;
+    position: relative;
+    top: -75px;
+    font-size: 18px;
+}
+.html section:first-child figure:first-of-type {
+    width: 40%;
+    height: 40%;
+    float: left;
+}
+.html section:first-child figure:last-of-type {
+    width: 40%;
+    height: 40%;
+    float: left;
+}
+figcaption {
+    text-align: center;
+}
+.html section  img {
+    clear: both;
+    display: block;
+    margin: 0 auto;
+}
+.home section img {
+    float: left;
+    margin-right: 20px;
+}
+.css section  img {
+    clear: both;
+    display: block;
+    margin: 0 auto;
+}
+.css section:first-of-type {
+    margin-top: 15px;
+    width: 45%;
+    float: left;
+}
+.css section:last-of-type {
+    margin-top: 15px;
+    width: 45%;
+    float: right;
+}
+.js section  figcaption {
+    text-align: left;
+}
+.js section figure:first-of-type  {
+    width: 42%;
+    height: 40%;
+    float: left;
+}
+.js section figure:last-of-type  {
+    width: 42%;
+    height: 40%;
+    float: left;
+}
+.mobile section  img {
+    clear: both;
+    display: block;
+    margin: 0 auto;
+}
+
+/* END PAGE STYLING */
+
+/* START NAVIGATION STYLING */
+nav {
+    float: left;
+    width: 100%;
+    overflow:hidden;
+    font-size:16px;
+}
+nav ul {
+    list-style-type: none; 
+    margin: 20px auto;
+    padding: 0;
+    float: left;
+    position:relative;
+    left:50%;
+}
+nav li {
+    float: left;  
+    position:relative;
+    right:50%;
+    margin-right: 0.25em;
+}
+nav li a {
+    display: block;
+    padding: 0.5em;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    border: 2px solid black;
+}
+nav li a:hover {
+    background-color: white;   
+    color: black;
+}		
+nav.floater {
+    position: fixed;
+    top: 0;
+    width: 75%;
+    background: rgba(0,0,0,0.5);
+}
+nav.floater ul li {
+    background: transparent;
+}
+/* END NAVIGATION STYLING */
+
+/* START FOOTER STYLING */
+footer {
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    padding: 5px;
+    background: black;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    clear: both;
+}
+footer a.top {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    background: rgba(0,0,0,0.5);
+}
+/* END FOOTER STYLING */
+a {
+    text-decoration: none;
+    color: #36F;
+}
+a:visited  {
+    color: #96F;
+}
+a:active {
+    color: #F00;
+}
+nav a:visited  {
+    color: white;
+}
+.skip {
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+    height: 1px;
+    width: 1px;
+    text-align: left;
+    overflow: hidden; 
+}
+@media screen and (max-width: 1450px) {
+
+    #page {
+        width: 100%;
+        margin: 0 auto;
+    }
+    nav.floater {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 960px) {
+
+    header h1 {
+        font-size: 30px;
+        padding: 3% 0;
+		line-height: 1.5em;
+    }
+    h2 {
+        font-size: 20px;
+        line-height: 1em;
+    }
+    h3 {
+        font-size: 18px;	
+    }
+    section p {
+        padding: 10px;
+        clear: both;
+        display: block;
+        margin: 0 auto;
+    }
+    section ul {
+        width: 10%;
+        clear: both;
+        margin: 0 auto;
+        position: relative;
+        top: 0;
+        font-size: 16px;
+    }
+    .html section:first-child figure:first-of-type {
+        width: 100%;
+        clear: both;
+        margin: 0 auto;
+    }
+    .html section:first-child figure:last-of-type {
+        width: 100%;
+        clear: both;
+        margin: 0 auto;
+    }
+    .html section  img {
+        width: 100%;
+    }
+    .home section img {
+        clear: both;
+        width: 100%;
+    }
+    .css section  img {
+        clear: both;
+        width: 100%;
+    }
+    .css section:first-of-type {
+        margin-top: 0;
+        width: 100%;
+        clear: both;
+    }
+    .css section:last-of-type {
+        margin-top: 0;
+        width: 100%;
+        clear: both;
+    }
+    .js section:first-of-type  {
+        margin-top: 0;
+    }
+    .js section figure:first-of-type  {
+        width: 100%;
+        clear: both;
+        margin: 0 auto;
+    }
+    .js section:first-child figure:last-of-type {
+        width: 100%;
+        clear: both;
+        margin: 0 auto;
+    }
+    nav {
+        font-size: 12px;
+        padding: 0;
+        margin: 0 0 15px 0;
+    }
+    footer {
+        width: 100%;
+    }
+}

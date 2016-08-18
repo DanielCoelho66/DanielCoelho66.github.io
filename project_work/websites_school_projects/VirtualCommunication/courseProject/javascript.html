@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Javascript</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="description" content="To show beginner web designers/developers some useful tips and tricks.">
+        <meta name="author" content="Daniel Coelho">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="js/js.js" type="text/javascript" charset="utf-8"></script>
+    </head>
+
+    <body>
+        <div id="page">
+            <a href="#nav" aria-hidden="true" class="skip">Skip to navigation</a> 
+            <a href="#main" aria-hidden="true" class="skip">Skip to main content</a> 
+            <header role="banner">
+                <h1>Taking your web page to the next level</h1>
+                <nav id="nav" role="navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="html5.html">HTML5</a></li>
+                        <li><a href="css3.html">CSS3</a></li>
+                        <li><a href="javascript.html">JavaScript</a></li>
+                        <li><a href="mobile.html">Mobile Device</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <article id="main" class="js" role="article">
+
+                <section>
+                    <h2>Persistent Navigation and Back To Top Button</h2>
+                    <p>Persistent Navigation and Back To Top button is created using JavaScript and styled with CSS. It's a different style of navigation that appears when the user is scrolling through the page. With this style of navigation, the navigation bar is always available to the user instead of them having to scroll back up to the top. If the user does want to get back to the top the Back To Top button send them back to the top of the page. The $(window).scroll(function() is used to change the Persistent Navigation back to the Tab Style Navigaiton. It is also used for the Back To Top button. Once the user scrolls 20 pixels the function adds the class floater to the navigation and the Back To Top button which gives the navigation that Persistent Navigation look and once it gets back to the top it removes that class making it Tab Style again. The $('footer a.top').click(function(event) is similar to the Persistent Navigation function but it causes the Back To Top button to disappear once it reaches the top and reappear once the user scrolls 20 pixels again.</p>
+                    <figure>
+                        <img src="images/persistent_navigation.png" width="500" height="450" alt="persistent navigation code">
+                        <figcaption>Persistent Navigation and Back To Top Code</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/persistent_navigation_styles.png" width="300" height="400" alt="persistent navigation css styles">
+                        <figcaption>Persistent Navigation and Back To Top CSS styling</figcaption>
+                    </figure>
+                </section>
+
+            </article>
+            <footer role="contentinfo">
+                <p> &copy;2014</p>
+                <p><a href="#" class="top" title="Back to top of the page">Back To Top</a></p>
+            </footer>
+
+        </div> <!-- #page -->
+    </body>
+</html>

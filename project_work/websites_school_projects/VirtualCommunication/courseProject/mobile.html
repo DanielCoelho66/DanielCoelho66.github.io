@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Mobile Device</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="description" content="To show beginner web designers/developers some useful tips and tricks.">
+        <meta name="author" content="Daniel Coelho">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="js/js.js" type="text/javascript" charset="utf-8"></script>
+    </head>
+
+    <body>
+        <div id="page">
+            <a href="#nav" aria-hidden="true" class="skip">Skip to navigation</a> 
+            <a href="#main" aria-hidden="true" class="skip">Skip to main content</a> 
+            <header role="banner">
+                <h1>Taking your web page to the next level</h1>
+                <nav id="nav" role="navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="html5.html">HTML5</a></li>
+                        <li><a href="css3.html">CSS3</a></li>
+                        <li><a href="javascript.html">JavaScript</a></li>
+                        <li><a href="mobile.html">Mobile Device</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <article id="main" class="mobile" role="article">
+
+                <section>
+                    <h2>Responsive vs Adaptive</h2>
+                    <p>Responsive and Adaptive Web Design are both methods of controlling the way your website reacts to different screen sizes. Responsive is a fluid style of design that responds immediately to the size of your screen. Media queries are used to control how it reacts. For example, if you set media queries to max-width: 760 pixels, max-width: 960 pixels, max-width: 1080 pixels you can change the way the site looks until it reaches 760 pixels wide in size, then how it looks until 960 pixels, and so on. Adaptive is a style of design that is done by creating multiple CSS layouts for multiple versions of your site. For example, you would create a layout for mobile, tablets, desktops, and larger screens. Once the web page loads, it identifies what device or size it is and will use the appropriate CSS layout.</p>
+                </section>
+
+                <section>
+                    <h2>Media Queries</h2>
+                    <p>Below, I have shown the media queries that I used for this site. Between 960 pixels and 1450 pixels of width, I set the page width and the persistent navigation bar to a full 100% page width. 960 pixels of width and less will remain at 100% page width but I have also made it so each of the two column layouts becomes one column at 100% width as well. 1450 pixels and above will have the default stylings. This website is now viewable on any device.</p>
+                    <figure>
+                        <img src="images/media_query.png" width="800" height="600" alt="media query code">
+                        <figcaption>Responsive media queries code</figcaption>
+                    </figure>
+                </section>
+
+            </article>        
+            <footer role="contentinfo">
+                <p> &copy;2014</p>
+                <p><a href="#" class="top" title="Back to top of the page">Back To Top</a></p>
+            </footer>
+
+        </div> <!-- #page -->
+    </body>
+</html>

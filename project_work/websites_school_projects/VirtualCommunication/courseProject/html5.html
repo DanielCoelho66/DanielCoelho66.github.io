@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>HTML5</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="description" content="To show beginner web designers/developers some useful tips and tricks.">
+        <meta name="author" content="Daniel Coelho">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="js/js.js" type="text/javascript" charset="utf-8"></script>
+    </head>
+
+    <body>
+        <div id="page">
+            <a href="#nav" aria-hidden="true" class="skip">Skip to navigation</a> 
+            <a href="#main" aria-hidden="true" class="skip">Skip to main content</a> 
+            <header role="banner">
+                <h1>Taking your web page to the next level</h1>
+                <nav id="nav" role="navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="html5.html">HTML5</a></li>
+                        <li><a href="css3.html">CSS3</a></li>
+                        <li><a href="javascript.html">JavaScript</a></li>
+                        <li><a href="mobile.html">Mobile Device</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <article id="main" class="html" role="article">
+
+                <section>
+                    <h2>Semantic Elements</h2>
+                    <p>Prior to HTML5 web pages used a lot of div elements to show divisions between areas of content. With HTML5, new <dfn><abbr title="Semantic elements are elements with meaning">semantic elements</abbr></dfn>  were introduced. These provide easier, cleaner, and more accessible code. You should move away from div elements and move towards semantic elements. <a href="http://html5doctor.com/element-index/" title="HTML5 Doctor">HTML5 Doctor</a> is a great site to learn HTML5 elements, as it provides definitions and examples of each element.</p>
+                    <figure>
+                        <img src="images/semantic_elements.gif" width="300" height="300" alt="Semantic Elements">
+                        <figcaption>Semantic Elements</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/non-semantic_elmenets.jpg" width="300" height="300" alt="Non-Semantic Elements">
+                        <figcaption>Non-Semantic Elements</figcaption>
+                    </figure>
+                </section>
+
+                <section>
+                    <h2>Accessibility</h2>
+                    <h3><q>Skip to - </q> link</h3>
+                    <p>Accessibility on the web is becoming more important, and devices like screen readers are helping people who have a vision impairment to surf the web. Screen readers are controlled by keyboard commands and will read out a web page's content. A <q>Skip to -</q>  link is unseen by average users but allows someone with a screen reader to skip to different sections of the page.</p>
+                    <figure>
+                        <img src="images/skip_to.png" width="300" height="200" alt="Skip to links">
+                        <figcaption>Example of <q>Skip to</q> links</figcaption>
+                    </figure>
+                    <h3>WAI-ARIA</h3>
+                    <p><dfn><abbr title="Web Accessibility Initiative - Accessible Rich Internet Applications">WAI-ARIA</abbr></dfn> is a set of attributes used to increase accessibility of a web page. These attributes provide additional information for screen readers to provide an overall better experience and accessibility of the site for everyone.There are different types of WAI-ARIA attributes such as: Landmark roles, states and properties, and live regions. The <a href="http://www.w3.org/TR/wai-aria/states_and_properties" title="Learn more about WAI-ARIA">W3C</a>  are the ones who help set the standards for WAI-ARIA and accessibility on the web.</p>
+                    <figure>
+                        <img src="images/landmark_roles.png" width="300" height="300" alt="WAI-ARIA landmark roles">
+                        <figcaption>Example WAI-ARIA landmark roles</figcaption>
+                    </figure>
+                </section>
+
+                <section>
+                    <h2>Meta Tags</h2>
+                    <p>Meta elements are located in the head section and are used to provide additional metadata about a website. This additional metadata is useful for search engines and search results. When someone enters a search, if it matches up with the metadata(or the content of the web page), it'll be displayed on the search results page.</p>
+                    <figure>
+                        <img src="images/meta.png" width="800" height="150" alt="Meta Tags">
+                        <figcaption>Example of Meta Tags</figcaption>
+                    </figure>
+                </section>
+
+            </article>
+
+            <footer role="contentinfo">
+                <p> &copy;2014</p>
+                <p><a href="#" class="top" title="Back to top of the page">Back To Top</a></p>
+            </footer>
+
+        </div> <!-- #page -->
+    </body>
+</html>
