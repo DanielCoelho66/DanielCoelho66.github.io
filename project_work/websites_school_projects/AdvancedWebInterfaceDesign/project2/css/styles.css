@@ -1,0 +1,461 @@
+/* PAGE STYLING */
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    background-color: #CCC;
+}
+#page {
+    width: 75%;
+    margin: 10px auto;
+    box-shadow: 5px 5px #999;
+    background-color: rgb(245,245,245); 
+}
+/* hide the skip to links but keep it visible for screen readers */
+.hide {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+a:focus {
+    outline: 3px solid black;
+}
+/* web fonts */
+@font-face {
+    font-family: 'BPreplay'; src:url(../fonts/BPreplay/BPreplay.otf);
+}
+
+
+/* NAVIGATION STYLING */
+nav {
+    position: relative;	
+    z-index: 100;	
+    background-color: #D3222A;
+    padding: 0.5em 0;
+    font-weight: bold;
+    font-family: 'BPreplay'; 
+    border: 1px solid black;
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align:center;
+    float: left;
+}
+nav ul li {
+    float: left;  
+    margin: 0 1em;
+}
+nav li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+nav li:nth-of-type(10) a:hover {
+    text-decoration: none;
+}
+nav input {
+    border-radius: 5px;
+}
+nav li:nth-of-type(9) {
+    margin-right: 4em;
+}
+nav li:nth-of-type(10),
+nav li:nth-of-type(11),
+nav li:nth-of-type(12),
+nav li:last-of-type {
+    margin: 0 0.5em;
+}
+nav.floater {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+nav li ul {
+    position: absolute;
+    left: -999em;
+    text-align:left;	
+}
+nav li ul li {
+    right: 0;
+}
+nav li:hover ul {
+    left: auto;
+}
+nav li ul div {
+    width: 40%;
+    background-color: #D3222A;
+    border: 2px solid black;
+    padding: 3px;
+}
+nav li ul div div li {
+    display: block;
+    width: 100%;
+}
+nav li ul div div:first-of-type {
+    width: 45%;
+    float: left;
+    border: none;
+}
+nav li ul div div:last-of-type {
+    width: 45%;
+    float: right;
+    border: none;
+}
+
+
+/* MAIN STYLING */
+main {
+    padding: 1%;
+    width: 60%;
+    float: left;
+}
+main h2 {
+    font-size: 2em;
+    text-transform:uppercase;
+    text-align:center;
+    font-family:  'BPreplay'; 
+}
+main h3 {
+    font-size: 1.5em;
+    font-family:  'BPreplay'; 	
+}
+main a {
+    background-color: #D3222A;
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-style: italic;	
+    border: 1px solid #D3222A;
+}
+main a:hover {
+    color: #D3222A;
+    background-color: white;
+    font-weight: bold;
+}
+main section {
+    padding: 1%;
+    border-top:2px solid  #D3222A;
+    margin-bottom: 30px;
+}
+main img {
+    float: left;
+}
+main section p:first-of-type {
+    font-size: 14px;
+}
+main section p {
+    float: right;
+    display: inline-block;
+    margin: 3px 0;
+}
+main div a {
+    display: block;
+    text-align: center;
+}
+
+
+/* ASIDE STYLING */
+aside {
+    width: 33%;
+    float: right;
+    padding: 1%;
+    margin-top: 120px;
+    border-left: 2px solid #D3222A;
+}
+aside p {
+    font-weight: bold;
+    margin: 0;
+    font-size: 1.25em;
+    font-family:  'BPreplay'; 	
+}
+aside img {
+    margin-right: 5px;
+}
+aside a {
+    text-decoration: none;
+    color: black;
+}
+aside li {
+    list-style-type:none;
+}
+aside div a:last-child,
+.tabNavigation li a {
+    display: block;
+    background-color: #D3222A;
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+    text-align: center;
+    font-style: italic;
+    margin: 5px 0;
+    border: 1px solid #D3222A;	
+} 
+aside .app a:hover .fa-android,
+aside .app a:hover .fa-apple,
+aside div a:last-child:hover,
+.tabNavigation a.selected,
+.tabNavigation a:hover {
+    color: #D3222A;
+    background-color: white;
+    font-weight: bold;
+}
+aside div div li {
+    padding: 10px 0;
+    font-weight: bold;
+}
+aside .tabs div li a {
+    color: #D3222A;
+    padding: 0 5px;	
+}
+aside .tabs div span {
+    font-size: 1.1em;
+}
+aside li:nth-of-type(even) {
+    background-color: #ccc;
+}
+aside .app {
+    display: none;
+}
+
+
+/* FOOTER STLING */
+footer {
+    width: auto;
+    margin: 0 auto;
+    color: white;
+    border: 1px solid black;
+    background-color: #D3222A;
+    clear: both;
+}
+#footer_container {
+    width: 50%;
+    margin: 0 auto;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+    padding: 0 3px;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* ICON STYLING */	
+aside .app .fa-android:hover,
+aside .app .fa-apple:hover,
+aside .fa {
+    color: #D3222A;
+}	
+aside .app .fa-android,
+aside .app .fa-apple,
+.fa {
+    color: white;
+    font-size: 1.25em;
+    padding: 3px;
+}	
+.fa-chevron-circle-right,
+.fa-chevron-circle-left	 {
+    color: #D3222A;
+}
+nav .fa {
+    font-size: 14px;
+}	
+
+
+/* SLIDER STYLING */	
+/* Slider from http://www.menucool.com */
+/*slider frame*/
+#sliderFrame {
+    width:920px;
+    margin:0 auto; 
+    padding: 15px;
+    box-shadow: 6px 6px #ccc;
+    background-color: #D3222A;
+}
+#slider, #slider div.sliderInner {
+    width:680px;height:400px; /* Must be the same size as the slider images */
+}
+#slider {
+    float:left;
+    position:relative;
+    transform: translate3d(0,0,0);
+}
+
+/* the link style (if an image is wrapped in a link) */
+#slider a.imgLink, #slider .video {
+    z-index:2;
+    position:absolute;
+    top:0;
+    left:0;
+    border: none;
+    padding:0;
+    margin:0;
+    width:100%;
+    height:100%;
+}
+
+/* ------ built-in navigation bullets wrapper that is relative to the #slider ------*/
+#slider div.navBulletsWrapper  {
+    display:none;
+}
+
+/* --------- Others ------- */
+#slider img, #slider>b, #slider a>b {
+    position:absolute; 
+    border:none; 
+    display:none;
+}
+#slider div.sliderInner {
+    overflow:hidden; 
+    -webkit-transform: rotate(0.000001deg);/* fixed the Chrome not crop border-radius bug*/
+    position:absolute; top:0; left:0;
+}
+
+/* -- thumbnails -- */
+#thumbs {
+    float:left;
+    margin-left:10px;
+    width:230px;
+    font:normal 11px/13px Arial;
+    color: black;
+}
+#thumbs .thumb {
+    border:1px solid #CCC;
+    border-top:1px solid #FFF;
+    padding:11px 8px;
+    background: white;
+}
+#thumbs .thumb-on {
+    color: #D3222A;
+}
+
+#thumbs img{border:1px solid #DDD; cursor:pointer; width:70px; height:44px;}
+#thumbs .frame {float:left;padding:2px;border:1px solid #ccc;background:white;border-radius:3px;box-shadow:0 0 3px #BBB;font-size:0;line-height:0;}
+#thumbs .thumb-content {float:left;width:110px;padding-left:18px;}
+
+/* Captions in #thumbs .thumb-content */
+#thumbs .thumb-content p {font-weight:bold; color:black; margin:0 0 3px;padding:0;}
+#thumbs .thumb-on .thumb-content p {color: #D3222A;;}
+
+.background {
+    clear:both;
+    height:0;
+}
+
+/* END SLIDER STYLING */
+
+/* clearfix hack to fix floated elements */
+.cf:before,
+.cf:after {
+    content: " "; 
+    display: table; 
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
+
+/* LARGER SCREEN STYLING */
+@media only screen and (min-width : 1824px) {
+    #slider .viewport {
+        width: 1000px;		
+    }
+    main section p {
+        width: 85%;
+    }	
+}
+
+/* DESKTOP AND LAPTOP STYLING */
+@media only screen and (min-width : 1224px) {
+    #slider .viewport {
+        width: 800px;		
+    }
+    main section p {
+        width: 75%;
+    }
+}
+
+/* TABLET STYLING */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+    #page {
+        width: auto;
+    }
+}
+
+/* MOBILE STLYING */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    /* page styling for mobile */
+    #page {
+        width: auto;
+    }
+    #sliderFrame {
+        display: none;
+    }
+    /* main content styling for mobile */
+    main {
+        clear: both;
+        display: block;
+        width: auto;
+    }
+    main section img {
+        width: 50%;
+    }
+    main section p {
+        width: 100%;
+    }
+    /* aside styling for mobile */
+    aside {
+        clear: both;
+        display: block;
+        width:auto;
+        border: none;
+    }
+    aside .app {
+        display: block;
+        text-align: center;
+    }
+    /* footer styling for mobile */
+    #footer_container {
+        width: 90%;
+    }
+    /* Navigation styling for mobile */
+    nav li {
+        display: none;
+    }
+    nav li:first-of-type,
+    nav li:nth-of-type(10) {
+        display: inline;
+    }
+    nav li ul div {
+        width: 85%;
+        background-color: #D3222A;
+        border: 2px solid black;
+        padding: 3px;
+    }
+    nav li ul div div:first-of-type {
+        width: 45%;
+        float: left;
+        border: none;
+    }
+    nav li ul div div:last-of-type {
+        width: 45%;
+        float: right;
+        border: none;
+    }
+}
