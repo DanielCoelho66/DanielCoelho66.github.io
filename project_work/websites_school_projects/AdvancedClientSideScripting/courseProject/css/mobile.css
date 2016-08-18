@@ -1,0 +1,118 @@
+/* PAGE STYLING */
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #ccc;
+}
+#page {
+    width: 90%;;
+    margin: 0 auto;
+}
+
+/* HEADER STLYING */
+header h1 {
+    display: block;
+    text-align: center;
+    font-weight:bold;
+    text-transform: uppercase;
+    font-style: italic;
+    margin: 0 auto;
+    color: #39F;
+    color: white;
+    background-color: #39F;
+}
+
+/* FORM STYLING */
+form {
+    width: auto;
+    margin: 5% auto;
+}
+input,
+textarea {
+    width: 100%;
+}
+input[type=submit] {
+    color: white;
+    background-color: #39F;
+    font-size: 2em;
+}
+.textEdit {
+    width: auto;
+    color: black;
+}
+
+/* NOTE STYLING */
+section.note p:first-of-type {
+    width: auto;
+    float: none;
+    text-align:left;
+}
+section.note {
+    color: white;
+    background:#39F;
+    padding: 2%;
+    position: relative;
+    height: auto;
+    width: 90%;
+    margin: 10px auto;
+    overflow: auto;
+    border-radius: 5px;
+    font-size: 1.25em;
+}
+
+section.note a.remove_item,
+section.note a.edit_item,
+section.note a.complete_item {
+    color: white;
+    text-decoration: none;
+}
+section.note a.complete_item:hover,
+section.note a.edit_item:hover,
+section.note a.remove_item:hover {
+    color: #F00;
+}
+.complete::after {
+    content: " Completed! ";
+    font-style: italic;
+    color: #3F0; 
+}
+section.note a {
+    display: block;
+    width: 33%;
+    float: left;
+    text-align:center;
+    border-top: 1px solid white;
+}
+
+
+/* ERROR MESSAGE STYLING */
+.error {
+    color: red;
+    margin: 10px auto;
+}
+
+/* OFFLINE NOTIFICATION STYLING */
+#wrapper {
+    position:absolute;
+    bottom: 0;
+    background-color: #F00;
+    color: white;
+    opacity: 0.9;
+    width: 100%;
+    padding: 1%;
+}
+.hide {
+    display: none;
+}
+
+/* FOOTER STYLING */
+footer {
+    position: relative;
+    bottom: 0;
+    font-weight: bold;
+    width: 100%;
+    color: white;
+    padding: 3px 0;
+    background-color: #39F;
+}

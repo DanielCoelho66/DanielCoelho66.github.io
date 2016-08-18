@@ -1,0 +1,128 @@
+
+/* PAGE STYLING */
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #ccc;
+}
+#page {
+    width: 60%;
+    margin: 0 auto 150px auto;
+}
+
+/* HEADER STLYING */
+header h1 {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight:bold;
+    text-transform: uppercase;
+    font-style: italic;
+    color: white;	
+    margin: 0 auto;
+    background-color: #39F;
+}
+
+/* FORM STYLING */
+form {
+    width: 50%;
+    margin: 5% auto;
+    font-size: 2em;
+    padding: 1%;
+}
+input,
+textarea {
+    width: 100%;
+}
+input[type=submit] {
+    color: white;
+    background-color: #39F;
+}
+.textEdit {
+    width: auto;
+    color: black;
+}
+
+/* NOTE STYLING */
+section.note p {
+    width: 85%;
+}
+section.note {
+    color: white;
+    background:#39F;
+    padding: 1%;
+    position: relative;
+    height: auto;
+    width: 100%;
+    font-size: 20px;
+    margin: 10px auto;
+    overflow: auto;
+    border-radius: 5px;
+}
+section.note > a.remove_item {
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+section.note > a.edit_item {
+    position: absolute;
+    top: 10px;
+    right: 70px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+section.note > a.complete_item {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+section.note > a.complete_item:hover,
+section.note > a.edit_item:hover,
+section.note > a.remove_item:hover {
+    color: #F00;
+}
+.complete::after {
+    content: " Completed! ";
+    font-style: italic;
+    color: #3F0; 
+}
+
+/* ERROR MESSAGE STYLING */
+.error {
+    color: red;
+    margin: 10px auto;
+}
+
+/* OFFLINE NOTIFICATION STYLING */
+#wrapper {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #F00;
+    opacity: 0.9;
+    font-size: 1.25em;
+    color: white;
+    width: 15%;
+    padding: 1%;
+}
+.hide {
+    display: none;
+}
+
+/* FOOTER STYLING */
+footer {
+    position: fixed;
+    bottom: 0;
+    font-weight: bold;
+    width: 100%;
+    color: white;
+    padding: 3px 0;
+    background-color: #39F;
+}
