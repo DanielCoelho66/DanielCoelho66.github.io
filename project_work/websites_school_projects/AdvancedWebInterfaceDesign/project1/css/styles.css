@@ -1,0 +1,363 @@
+/* START PAGE STYLING */
+html {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background:url(../images/background.jpg);
+}
+#page {
+    width: 85%;
+    margin: 0 auto;
+    background: #F0F0F0;
+}
+/* END PAGE STYLING */
+
+/* WEB FONTS*/
+@font-face {
+    font-family: 'capture-it'; src:url(../fonts/Capture-it/Capture_it.ttf);
+}
+
+/* START HEADER STYLING */
+header a:first-child {
+    float: left;
+    margin: 0;
+}
+header a {
+    text-decoration: none;
+    color: #39F;
+    float: right;
+    margin: 10px;	
+    border-right: 2px solid black;
+    padding: 0 10px 0 0;
+    text-transform:uppercase;
+}
+header a:first-of-type,
+header a:nth-of-type(2) {
+    border: none;
+    padding: 0;
+}
+header a:visited {
+    color:#609;
+}
+header a:active,
+header a:hover {
+    color: #F33;
+}
+/* END HEADER STYLING */
+
+/* START NAVIGATION STYLING */
+nav {
+    width: 100%;
+    overflow:hidden;
+    font-size: 20px;
+    background-color:#F33; 
+    border-radius: 5px;
+    padding: 0.5em 0;
+    margin: 10px 0;
+    border: 2px solid black;
+}
+nav ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    float: left;
+    position:relative;
+    left:50%;
+}
+nav li {
+    float: left;  
+    position:relative;
+    right:50%;
+    margin: 0 3em;
+}
+nav li a {
+    display: block;
+    text-decoration: none;
+    background-color: #F33; 
+    color: black;
+    font-weight: 900;
+}
+nav li a:hover {
+    color: white;
+}
+.fa-home {
+    font-size: 30px;
+}
+/* END NAVIGATION STYLING */
+
+/* START HOME PAGE STYLING */
+article section:first-of-type {
+    width: 10%;
+    float: left;
+}
+article section:first-of-type {
+    margin: 0;
+}
+article section:nth-of-type(2) {
+    width: 85%;
+    float: left;	
+    margin: 0 auto;
+}
+article section {
+    width: 30%;
+    float: right;
+    margin:  40px 15px;
+}
+article section h2 {
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-family: "capture-it", sans-serif;
+}
+article section a {
+    text-decoration: none;
+    color: #39F;	
+}
+article section a:visited {
+    color:#609;
+}
+article section a:active,
+article section a:hover {
+    color: #F33;
+}
+/* END HOME PAGE STYLING */
+
+/* START CAR PAGE STYLING */
+section h2 {
+    clear: both;
+    font-size: 50px;
+    font-family: "capture-it", sans-serif;
+}
+section img {
+    display: block;
+    margin: 0 auto;
+}
+section:first-of-type {
+    width: 10%;
+    float: left;
+    border-right: 1px solid black;
+}
+section:nth-of-type(2) {
+    width: 55%;
+    float: left;
+    margin-left: 20px;
+}
+section:first-of-type a {
+    display: block;
+    padding: 10px 0;
+}
+
+/* START FORM STYLING */
+section form {
+    width: 20%;
+    float: right;
+    border-left: 1px solid black;
+    padding: 1%;
+    margin: 0 15px;
+}
+.stock {
+    color: #096;
+}
+.stock:after {
+    content: "In Stock";
+}
+.no-stock {
+    color: #F03;
+}
+.no-stock:after {
+    content: "None";
+}
+section form fieldset {
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+section form legend {
+    font-weight: 900;
+    text-transform: uppercase;
+}
+section form input[name="submit"] {
+    background-color: #F33;
+    color: white;
+}
+section form button {
+    text-decoration: none;
+    background-color: #F33;
+    color: white;
+}
+/* END FORM STYLING */
+/* END CAR PAGE STYLING */
+
+
+/* START FOOTER STYLING */
+/* SOCIAL MEDIA ICONS */
+.fa-facebook-square,
+.fa-youtube-play,
+.fa-twitter-square {
+    font-size: 2em;
+    padding: 0 5px;
+    color: #F33;
+    float: right;
+}
+footer {
+    clear: both;
+    font-size: 14px;
+    font-weight: 900;
+    font-family:"capture-it", sans-serif;
+    padding: 10px;
+}
+/* END FOOTER STYLING */
+
+/* START SLIDER STYLING */
+#slider {
+    height: 400px;
+    overflow: hidden;
+    margin-left: 185px;
+}
+#slider .viewport {
+    float: left;
+    width: 52%;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #F33;
+}
+#slider .buttons {
+    visibility: hidden;
+}
+#slider .buttons {
+    display: block;
+    margin: 150px 10px 0 10px;
+    height: 2em;
+    width: 2em;
+    float: left;
+    text-align: center;
+
+}
+#slider a.prev {
+    font-size: 35px;
+    color: #F33;
+}
+#slider a.next {
+    color: #F33;
+    font-size: 35px;
+}
+#slider .disable {
+    visibility: hidden;
+}
+#slider .overview {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#slider .overview li {
+    float: left;
+    margin: 0 20px 0 0;
+    padding: 1px;
+    height: 350px;
+    width: 510px;
+}
+#slider .pager {
+    visibility: hidden;
+    overflow: hidden;
+    list-style: none;
+    clear: both;
+    text-align: center;
+    padding-left: 200px;
+    background-color: #F33;
+    width: 33%;
+    margin-left: 90px;
+}
+#slider .pager li {
+    float: left;
+}
+#slider .pagenum {
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    color: black;
+    font-size: 14px;
+    font-weight: 900;
+    display: block;
+    margin-right: 5px;
+}
+#slider .pagenum:hover {
+    color: white;
+}
+#slider .active {
+    color: white;
+}
+/* END SLIDER STYLING */
+
+/* RESPONSIVE MEDIA QUERIES */
+@media (max-width: 1400px) {
+    #slider .viewport {
+        width: 70%;
+    }	
+    #slider .pager {
+        width: 44%;
+    }
+    article section:first-of-type {
+        width: 15%;
+    }
+    article section:nth-of-type(2) {
+        width: 80%;
+    }
+    article section {
+        width: 90%;
+    }
+    section:first-of-type {
+        width: 15%;
+    }
+} 
+
+@media (max-width: 1100px) {
+    section:nth-of-type(2) {
+        width: 80%;
+    }
+    section form {
+        width: 90%;
+        border: none;
+    }
+    nav {
+        font-size: 14px;
+    }
+    .fa-home {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 800px) {
+    html {
+        background: none;
+    }
+    #page {
+        width: 100%;
+    }
+    section:first-of-type {
+        display: none;
+    }
+    article section:first-of-type {
+        display: none;
+    }
+    section {
+        width: 90%;
+    }
+    section img {
+        width: 100%;
+    }
+    #slider {
+        display: none;
+    }
+    nav li {;
+            margin: 1em;
+    }
+    header a {
+        border: none;
+        padding: 0;
+    }
+}
