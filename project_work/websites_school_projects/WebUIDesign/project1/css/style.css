@@ -1,0 +1,308 @@
+@charset "UTF-8";
+/* wd contents styling and layout */
+
+/* Start page Layout */
+body {
+    background-color: whitesmoke;
+}
+#page {
+    background-color: whitesmoke;
+    font-family: "Arial", Helvetica, sans-serif;
+    width: 60%;
+    margin: 0 auto;
+}
+/* End page layout*/
+
+/* Start heading styling*/
+header h1 {
+    color: darkorange;
+    font-size: 120px;
+    font-family: "Times New Roman", Times, serif;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+header p {
+    font-family: "courier", serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+/*removes escaping margins*/
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+}
+section > h2 {
+    font-family: "Times New Roman", Times, serif;
+    margin: 0;
+}
+/* End heading styling */
+
+/* image styling */
+article > img {
+    width: 40%;
+    float: left;
+    margin: 0 auto;
+}
+/* list styling */
+li em:first-of-type {
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+a {
+    text-decoration: none;
+    color: skyblue
+}
+/* Start section #livewell styling */
+#livewell {
+    border-top: 12px solid mediumseagreen;
+    width: 50%;
+    margin-right: 50px;
+    float: right;
+}
+#livewell li em:first-of-type a{
+    color: mediumseagreen;
+}
+#livewell li em:first-of-type {
+    color: mediumseagreen;
+}
+#livewell h2 {
+    font-size: 36px;
+}
+#livewell li {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+#livewell li:first-of-type em:last-of-type {
+    font-style: normal;
+    font-weight: bold;
+}
+#livewell li:last-of-type em:nth-of-type(even) {
+    font-style: normal;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+/* end section #livewell styling */
+
+/* Start section #style styling */
+#style {
+    border-top: 12px solid #F5679B;
+    width: 50%;
+    margin-right: 50px;
+    float: right;
+}
+#style li em:first-of-type{
+    color: #F5679B;
+}
+#style h2 {
+    font-size: 36px;
+}
+#style li {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+#style li:first-of-type em:last-of-type {
+    font-style: normal;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+/* end section #style styling */
+
+/* Start section #health styling */
+#health {
+    border-top: 12px solid #75C7EB;;
+    width: 50%;
+    margin-right: 50px;
+    float: right;
+}
+#health li em:first-of-type {
+    color: #75C7EB; 
+}
+#health h2 {
+    font-size: 36px;
+}
+#health li {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+#health li:first-of-type em:last-of-type {
+    font-style: normal;
+    font-weight: bold;
+}
+#health li:nth-of-type(4) em:nth-of-type(even) {
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/* end section #health styling */
+
+/* Start aside styling */
+aside {
+    box-shadow: 1px -1px 10px 1px orange;
+    font-weight: bold;
+    width: 38%;
+    margin: auto;
+    margin-top: 30px;
+    float: left;
+    background-color: white;
+}
+aside h2 {
+    line-height: 1em;
+    margin: 10px 10px 10px 0;
+    font-size: 45px;
+    font-weight: normal;
+    font-family: "Times New Roman", Times, serif;
+    text-indent: 8px;
+}
+aside h3 {
+    line-height: 1em;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-indent: 8px;
+}
+aside p{
+    line-height: 1em;
+    font-size: 14px;
+    text-indent: 8px;
+}
+aside li {
+    font-size: 14px;
+    line-height: 1.5em;
+}
+/* End aside styling */
+
+/* Stat footer styling*/
+footer {
+    font-family: "Times New Roman", Times, serif;
+    text-transform: uppercase;
+    font-size: 10px;
+    text-align: right;
+    clear: both;
+    padding-top: 20px;
+}
+footer em:first-of-type {
+    color: darkorange;
+    font-size: 20px;
+    padding: 4px;
+}
+footer em:last-of-type {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 5px;
+}
+footer p > a {
+    color: black;
+    text-align: left;
+}
+footer a > img {
+    float: left;
+}
+.originalImage {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+}
+.originalImage a {
+	color: #09F;
+}
+/* End footer styling */
+
+/* clearfix for elements to self-clear their floats */
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+} 
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+}
+
+/* different screen width styling */
+/* For screens 960px and less */
+@media (max-width: 800px) {
+    #page {
+        width: 80%;
+    }
+    article > img {
+        width: 100%;
+        height: 50%;
+        clear: both;
+        margin: auto;
+    }
+    header h1 {
+        font-size: 50px;
+    }
+    header p {
+        font-size: 10px;
+    }
+    #livewell,
+    #style,
+    #health {
+        width: 100%;   
+        margin: auto;
+    }
+    aside {
+        width: 100%;
+        height: 50%;
+        margin: auto;
+    }
+    footer {
+        padding: 10px;
+        font-size: 8px;
+    }
+    footer em:first-of-type {
+        font-size: 16px;
+        padding: 2px;
+    }
+    footer em:last-of-type {
+        font-size: 16px;
+        margin: 0;
+    }
+    footer a > img {
+        float: left;
+        width: 28px;
+        height: 28px;
+        margin: 0;
+        padding: 0;
+    }
+}
+/* For screens between 961px and 1300px */
+@media (min-width: 801px) and (max-width: 1100px) {
+    #page {
+        width: 75%;
+    }
+    article > img {
+        width: 40%;
+        margin: auto;
+    }
+    header h1 {
+        font-size: 100px;
+    }
+    header p {
+        font-size: 12px;
+    }
+    #livewell {
+        width: 50%; 
+    }
+    #style {
+        width: 50%;
+    }
+    #health {
+        width: 50%;
+    }
+    aside {
+        width: 35%;
+    }
+    aside h2 {
+        font-size: 35px;
+    }
+    footer {
+        margin: 0;
+    }
+}

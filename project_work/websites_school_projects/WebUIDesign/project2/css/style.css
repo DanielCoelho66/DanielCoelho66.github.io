@@ -1,0 +1,380 @@
+@charset "utf-8";
+
+/* PAGE STYLING */
+body {
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2em;
+    background-color: #E6E6E6;
+}
+#page {
+    width: 80%;
+    margin: 0 auto;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+}
+
+/* START HEADER STYLING */
+header a {
+    background-color: #06F;
+    color: white;
+    padding: 0.5em;
+    border-radius: 5px;
+    margin-right: 0.25em;
+    border: 2px solid #06F;
+}
+header a:hover {
+    background-color: white;
+    color: black;
+}
+header h1 {
+    font-size: 250%;
+    padding-top: 15px;	
+    color: #06F;
+    font-family: Impact, sans-serif;
+}
+header h1 em:first-of-type {
+    color: #0C6;
+    font-style: normal;
+}
+header > a {
+    text-decoration: none;
+    display: inline;
+    box-shadow: 0 4px #ccc;
+}
+/* END HEADER STYLING */
+
+/* START NAVIGATION STYLING */
+nav {
+    float: left;
+    width: 100%;
+    overflow:hidden;
+    font-size: 20px;
+    background-color: #06F;
+    border-radius: 5px;
+    padding: 0.5em;
+    margin: 10px 0;
+    box-shadow: 0 5px #ccc;
+}
+nav ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    float: left;
+    position:relative;
+    left:50%;
+}
+nav li {
+    float: left;  
+    position:relative;
+    right:50%;
+    margin-right: 4em;
+}
+nav li a {
+    display: block;
+    padding: 0.5em;
+    background-color:  #06F;
+    text-decoration: none;
+    color: white;
+}
+nav li a:hover {
+    background-color: white;
+    color: black;
+}		
+#search {
+    float: right;
+}
+/* END NAVIGATION STYLING */
+
+/* START SECTION STYLING */
+
+/* 1ST SECTION - header and images of the product */
+section:first-of-type {
+    width: 60%;
+    float: left;
+    padding: 2%;
+}
+section:first-of-type > header {
+    margin: 0 0 20px 0;
+}
+section:first-of-type > header h2 {
+    font-size: 40px;
+    display: inline;
+    margin: 10px 100px 10px 0;
+}
+section:first-of-type > header h3 {
+    font-size: 35px;
+    display: inline;
+}
+section:first-of-type img {
+    clear: both;
+    border: 1px solid black;
+}
+
+/* 2ND SECTION - add to cart form */
+section:nth-of-type(2) {
+    width: 20%;
+    height: 100%;
+    float: right;
+    padding: 2%;
+    margin: 75px 0 0 0;
+    border: 2px solid black;
+    border-radius:5px;
+    background-color: white;
+}
+section:nth-of-type(2) form {
+    font-weight: bold;
+    color: black;
+}
+section:nth-of-type(2) form input:first-of-type,
+section:nth-of-type(2) form select {
+    margin: 0 0 50px 0;	
+    color: black;
+}
+section:nth-of-type(2) form select {
+    color: black;
+}
+section:nth-of-type(2) form input:last-child {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #06F;
+    color: white;
+    float: right;
+}
+section:nth-of-type(2) form input:last-child:hover {
+    background-color: white;
+    border: 1px solid #06F;
+    color: black;
+}
+section:nth-of-type(2) form p em {
+    color: #0C6;
+}
+/* 3RD SECTION - description */
+section:nth-of-type(3) {
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 10px 0;
+    background-color: white;
+    padding: 30px 0;
+}
+section:nth-of-type(3) > h2 {
+    font-size: 30px;
+    background-color: #0C6;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px #ccc;
+}
+section:nth-of-type(3) p {
+    padding: 10px 15px;
+    line-height: 1.4em;
+}
+section:nth-of-type(3),
+section:last-of-type {
+    clear: both;
+    width: 100%;
+}
+/* 4TH SECTION - reviews */
+section:last-of-type {
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 10px 0;
+    background-color: white;
+    padding: 20px 0;
+    height: 1300px;
+}
+section:last-of-type div h3 {
+    font-size: 25px;
+}
+section:last-of-type > h2 {
+    font-size: 30px;
+    background-color: #0C6;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px #ccc;
+}
+section:last-of-type div {
+    display: inline-block;
+    width: 30%;
+    margin: 10px 5px 5px 20px;
+    padding: 5px;
+    border-right: 1px solid black;
+    float: left;
+}
+section:last-of-type div:nth-of-type(3),
+section:last-of-type div:nth-of-type(6) {
+    border: none;
+}
+section:last-of-type div time,
+section:last-of-type div p:first-of-type {
+    font-size: 12px;
+}
+section:last-of-type div p:nth-of-type(2) {
+    font-weight: bold;
+}
+section:last-of-type div p:last-child {
+    padding: 10px;
+    line-height: 1.4em;
+}
+section:last-of-type div:last-child {
+    text-align: center;
+    clear: both;
+    width: 100%;
+    border: none;
+}
+section:last-of-type div:last-child a {
+    clear: both;
+    font-size: 18px;	
+    color: white;
+    text-decoration: none;
+    background-color: #06F;
+    text-align: center;	
+    padding: 10px;
+    border-radius: 5px;
+}
+section:last-of-type div:last-child a:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid #06F;
+}
+/* END SECTION STYLING */
+
+/* START FOOTER STYLING */
+footer {
+    clear: both;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #06F;
+    color: white;
+    font-size: 12px;
+}
+footer p {
+    padding: 5px;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+    padding: 0 5px;
+}
+footer a:hover {
+    color: #F00;
+}  
+footer a#topbutton {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    background-color: #06F;
+	opacity: 0.75;
+	border-radius: 5px;
+}
+/* END FOOTER STYLING */
+
+/* Responsive media queries */
+
+/* For screens up to 1500px of width */
+@media (max-width: 1500px) {
+    #page {
+        width: 90%;
+    }
+}
+
+/* For screens up to 1350px of width */
+@media (max-width: 1350px) {
+    section:last-of-type {
+        height: 1600px;
+    }
+    section:last-of-type div {
+        width: 45%;
+        border: none;
+    }
+}
+
+/* For screens up to 1150px of width */
+@media (max-width: 1150px)  {
+    section:first-of-type {
+        width: 70%;
+    }
+}
+
+/* For screens up to 985px of width */
+@media (max-width: 985px) {
+    section:first-of-type {
+        width: 90%;
+    }
+    section:first-of-type > header h2 {
+        display: block;
+        margin-right: 0;
+    }
+    section:first-of-type > header h3 {
+        display: block;
+        margin-top: 40px;
+    }
+    section:first-of-type a {
+		position: relative;
+		left: 125px;
+    }
+    section:nth-of-type(2) {
+        width: 90%;
+        margin: 10px;;
+    }
+    section:last-of-type{
+        height: 1750px;
+    }
+}
+/* For screens up to 960px of width */
+@media (max-width: 960px) {
+    nav {
+        width: 90%;
+        font-size: 14px;
+    }
+    nav li {
+        margin: 0;
+    }
+    section:first-of-type > header h2 {
+        line-height: 1.4em;
+    }
+    #search {
+        clear: both;
+        display: block;
+        margin-top: 40px;
+    }
+    section:first-of-type a {
+        clear: both;
+        margin: 0 auto;
+    }
+    section:nth-of-type(2) {
+        width: 90%;
+        margin: 0 0 10px 0;
+    }
+    section:last-of-type {
+        height: 2050px;
+    }
+    section:last-of-type div {
+        width: 90%;
+        clear: both;
+        margin: 0;
+    }
+}
+
+/* For screens up to 750px of width */
+@media (max-width: 750px) {
+    nav {
+        font-size: 12px;
+    }
+    section:last-of-type {
+        height: 2500px;
+    }
+}
+
+/* For screens up to 500px of width */
+@media (max-width: 500px) {
+    section:last-of-type {
+        height: 3400px;
+    }
+}
