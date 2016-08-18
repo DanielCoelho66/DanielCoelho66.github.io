@@ -1,0 +1,127 @@
+html {
+	font-family:"Times New Roman", Times, serif;
+	font-size: 16px;
+	line-height: 1.5;
+	background-color: rgb(240,240,230);
+}
+#page {
+	width: 90%;
+	margin: 0 auto;
+	background-color: white;
+	border: 1px solid black;
+	padding: 1%;
+	box-shadow: 4px 4px #ccc;
+}
+@font-face {
+    font-family: 'garton'; src: url(fonts/Garton/garto16.ttf);
+}
+
+header  {
+	display: inline-block;
+	font-style: italic;
+	font-family: "garton", serif;
+	text-shadow: -1px 0 #ccc, 0 1px #ccc, 1px 0 #ccc, 0 -1px #ccc;
+	margin-bottom: 50px;
+	width: 40%;
+}
+header em {
+	display: block;
+	font-weight: bold;
+	text-transform:uppercase;
+	font-size: 35px;
+}
+header a {
+	text-decoration: none;
+	color: #F33;
+}
+
+nav {
+	float: right;
+    width: 40%;
+    overflow:hidden;
+    font-size: 18px;
+    background-color:#F33; 
+    border-radius: 5px;
+    margin: 10px 0;
+    border: 2px solid black;
+}
+nav ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    float: left;
+    position:relative;
+    left:50%;
+}
+nav li {
+    float: left;  
+    position:relative;
+    right:50%;
+    margin: 0 2em;
+}
+nav li a {
+    display: block;
+    text-decoration: none;
+    background-color: #F33; 
+    color: black;
+    font-weight: 900;
+}
+nav li a:hover {
+    color: white;
+}
+
+article {
+	width: 80%;
+	margin: 0 auto;
+	clear:both;
+}
+section {
+	margin-bottom: 50px;
+}
+article h2 {
+	font-size: 20px;
+	background-color:#F33; 
+    border-radius: 5px;
+    border: 2px solid black;
+	text-align:center;
+	color: white;
+	text-transform:capitalize;
+}
+article section:first-of-type h2:first-of-type {
+	text-transform: none;
+}
+article h3 {
+	text-transform: capitalize;
+	font-weight: bold;
+	font-size: 20px;
+}
+article p em {
+	font-weight: bold;
+}
+article p {
+	padding: 0 1%;
+	font-size: 18px;
+}
+
+a {
+	text-decoration: none;
+	color: #36F;
+}
+a:active {
+	color:#F33;
+}
+a:hover {
+	color: #F33;
+}
+
+section ul {
+	list-style-type: square;
+}
+
+section form{
+	border: 1px solid black;
+	padding: 1%;
+}
+section label {
+	font-weight: bold;
+}
