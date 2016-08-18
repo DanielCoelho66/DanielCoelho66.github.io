@@ -1,8 +1,86 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+       	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="shortcut icon" href="faviconit/favicon.ico">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+        <meta name="decription" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="Daniel Coelho">
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <title>Daniel Coelho</title>
+    </head>
+    <body onload="time(), todayDate()" class="home">
 
-<body>
-Hello world! 
-</body
+    <header>
+        <!-- Menu Navigation -->
+        <div class="menu" role="navigation">    
+            <!-- Menu icon close-->
+            <div class="icon-close">
+                <i class="fa fa-arrow-right"></i>
+            </div>
 
+            <!-- Navigation -->
+            <ul>
+                <li class="active"><a href="index.html" title="Return to the home page">Home</a></li>
+        		<li><a href="portfolio.html" title="View my portfolio of all my work">Portfolio</a></li>
+                <li><a href="about.html" title="Learn more about me">About</a></li>
+                <li><a href="contact.php" title="Have a question or comment? Contact me">Contact</a></li>
+            </ul>
+        </div>
+		
+        <div class="header" role="banner">
+            <img src="images/logo_white.png" id="logo" width="498" height="94" alt="my logo" />
+            <img src="images/dc_logo_white.png" id="smallLogo" width="130" height="130" alt="Small version of my logo for mobile">
+
+            <!-- Menu icon open-->     
+            <div class="icon-menu">
+                <i class="fa fa-bars"></i>
+                Menu
+            </div>
+		</div>
+    </header> 
+
+     <!-- Main Content -->
+        <div role="main" class="main">
+
+        
+          <div class="landingMessage clearfix"> 
+
+            <div id="text_slider" class="clearfix">
+                <div><h1>Web Designer</h1></div>
+                <div><h1>Graphic Designer</h1></div>
+                <div><h1>Web Developer</h1></div>
+                <div><h1>First-Page Worthy SEO</h1></div>
+                <div><h1>Professional Quality</h1></div>
+                <div><h1>Affordable Freelancer</h1></div>
+            </div>
+
+            <a href="portfolio.html" title="View my portfolio of all my work">View My Portfolio</a>
+            <a href="about.html" title="Learn more about me">Learn more</a>
+        </div>
+
+            <!-- Date and Time -->
+            <div id="clock"></div>
+            <div id="date"></div>
+            
+        </div> <!-- End of Main Content -->
+<script>
+    $("#text_slider div:gt(0)").hide(); 
+
+    setInterval(function() {
+    $('#text_slider div:first').fadeOut(500).next().fadeIn(1000).end().appendTo('#text_slider');
+    }, 3000);       
+
+</script>        
+    </body>
 </html>
