@@ -56,31 +56,39 @@ $(document).ready(main);
 
 // function for persistent nav and back to top button
 $(function() {
-    var $top1 = $('header').offset().top + 20;
+  var $top1 = $('header').offset().top + 20;
     $(window).scroll(function() {
 
         if ($(window).scrollTop() > $top1) {
-            $('header').addClass('floater');
-            
+            $('footer a.top').fadeIn(200);
         } else {
-            $('header').removeClass('floater');
+            $('footer a.top').fadeOut(200);
         }
     });
+    $('footer a.top').click(function(event) {
+        event.preventDefault();
+        $('html, body').animate({scrollTop: 0}, 300);
+        $(this).css('display', 'none');
+
 });
 
+// BACK TO TOP FUNCTION 
+
 // function to generate a random quote
-$(function quoteGenerator() {
+// random quote generator inspired by http://www.computerhope.com/j15.htm
+  $(function quoteGenerator() {
 
-  quotes = [];
-  quotes[0] = "What separates design from art is that design is meant to be... functional.  - Cameron Moll";
-  quotes[1] = "Great web design without functionality is like a sports car with no engine.  - Trish Parr";
-  quotes[2] = "Websites should look good from the inside and out. - Paul Cookson";
-  quotes[3] = "If there's one thing you learn by working on a lot of different Web sites, it's that almost any design idea--no matter how appallingly bad--can be made usable in the right circumstances, with enough effort. - Steve Krug";
-  quotes[4] = "There are three responses to a piece of design – yes, no, and WOW! Wow is the one to aim for. - Milton Glaser";
-  quotes[5] = "It\'s through mistakes that you actually can grow. You have to get bad in order to get good. - Paula Scher";
+    quotes = [];
+    quotes[0] = "What separates design from art is that design is meant to be... functional.  - Cameron Moll";
+    quotes[1] = "Great web design without functionality is like a sports car with no engine.  - Trish Parr";
+    quotes[2] = "Websites should look good from the inside and out. - Paul Cookson";
+    quotes[3] = "If there's one thing you learn by working on a lot of different Web sites, it's that almost any design idea--no matter how appallingly bad--can be made usable in the right circumstances, with enough effort. - Steve Krug";
+    quotes[4] = "There are three responses to a piece of design – yes, no, and WOW! Wow is the one to aim for. - Milton Glaser";
+    quotes[5] = "It\'s through mistakes that you actually can grow. You have to get bad in order to get good. - Paula Scher";
 
-  index = Math.floor(Math.random() * quotes.length);
-  var quote = document.getElementById("quote");
-  quote.textContent = quotes[index];
-  var text = quote.textContent;
+    index = Math.floor(Math.random() * quotes.length);
+    var quote = document.getElementById("quote");
+    quote.textContent = quotes[index];
+    var text = quote.textContent;
+  });
 });
