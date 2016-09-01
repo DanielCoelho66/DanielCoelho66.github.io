@@ -80,7 +80,7 @@ body.home {
     text-decoration: none;
 }
 #text_slider {
-    width: 50%;
+    width: 30%;
     height: 100px;
     margin: 5% auto 50px auto;
 }
@@ -88,13 +88,12 @@ body.home {
     position: absolute;
 }
 #text_slider h1 {
-   text-indent: 140px;
+   text-indent: 0;
    margin-top: 45px;
 }
 /* MENU STYLING */
 .menu {
-    background-color: rgb(0,50,110);
-    background-color: rgba(0,50,110,0.9);
+    background-color: rgb(51,51,51);
 	right: -250px;  
     height: 100%;
     position: fixed;
@@ -116,11 +115,11 @@ body.home {
 }
 .menu li:hover {
     background-color: rgb(0,204,255);
-    background-color: rgba(0,204,255,0.5);
+    background-color: rgba(0,204,255,0.7);
 }
 .menu li.active {
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgb(0,204,255);
+    background-color: rgba(0,204,255,0.2);
 }
 .menu a {
     color: white;
@@ -133,19 +132,10 @@ body.home {
 header {
     transition: 1s;
 }
-.floater {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: rgb(0,50,110);
-    background: rgba(0,50,110,0.5);
-    z-index: 2;
-    transition: 1s;
-}
 .icon-close {
     padding: 10px 20px;
     font-size: 35px;
-    text-align: right;
+    text-align: left;
 }
 .icon-close i {
     cursor: pointer;
@@ -166,7 +156,7 @@ header {
     color: white;
 }
 .fa-arrow-right:hover {
-	color: #0CF;
+    color:  rgb(0,204,255);
 }
 
 /* DATE AND TIME STYLING */
@@ -266,10 +256,14 @@ body.portfolio {
     text-align: center;
     height: 300px;
     background-color: rgb(51,51,51);
-    background-color: rgba(51,51,51, 0.8);
+    background-color: rgba(51,51,51,0.9);
 }
 .portfolio h2 {
     line-height: 0.1;
+}
+.portfolio .container h2 {
+    display: inline-block;
+    margin: 25px auto;
 }
 .portfolioContent p {
     text-align: center;
@@ -277,12 +271,9 @@ body.portfolio {
 }
 .portfolioContent img {
     border-radius: 50%;
-    opacity: 0.5;
-    transition: 1s;
 }
-.portfolioContent img:hover {
-    opacity: 1;
-    transition: 1s;
+.container {
+    width: 80%;
 }
 .gallery .row {
     width: 100%;
@@ -296,7 +287,7 @@ body.portfolio {
     background-color: rgba(255,255,255,0);
     border: none;
     display: block;
-    margin: 0 auto;
+    margin: 15px auto;
 }
 /* == END PORTFOLIO PAGE STYLING ==  */
 
@@ -317,11 +308,11 @@ body.contact {
     margin: 20px auto 100px auto;
     color: white;
     background-color: rgb(51,51,51);
-    background-color: rgba(51,51,51, 0.8);
+    background-color: rgba(51,51,51,0.9);
 }
 .contactInfo {
     float: left;
-    width: 50%;
+    width: 60%;
     font-size: 20px;
     margin: 0;
     display: block;
@@ -335,7 +326,7 @@ body.contact {
     border: none;
 }
 div#map {
-    width: 45%;
+    width: 35%;
     height: 250px;
     float: right;
     padding: 0;
@@ -417,22 +408,72 @@ input {
     text-shadow: 2px 2px 2px black;
 }
 .fa-linkedin-square,
-.fa-facebook-square {
+.fa-github-square {
     color: grey;
     cursor: pointer;
     font-size: 40px;
-    transition: transform 1s;
+    transition: 1s;
 }
-.fa-linkedin-square:hover,
-.fa-facebook-square:hover {
-    transform: rotate(360deg);
-    transition: transform 1s;
-    color: #0CF;
+.fa-linkedin-square:hover {
+    transition: 1s;
+    color: #0077B5;
+}
+.fa-github-square:hover {
+    transition: 1s;
+    color: #6CC644;
+    /*color: #0CF;*/
 }
 /* == END CONTACT PAGE STYLING ==  */
 
+/* == START FOOTER STYLING == */
+footer {
+    background: black;
+    width: 100%;
+    height: auto;
+    padding: 2%;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+footer .row {
+    width: 80%;
+    margin: 15px auto;
+}
+footer a {
+    color: white;
+    font-size: 14px;
+}
+footer a.top {
+    position: fixed;
+    bottom: 1em;
+    right: 2em;
+    text-decoration: none;
+    padding: 1%;
+    height: 50px;
+    width: 50px;
+    display: none;
+    border-radius: 50%;
+    background: rgb(51,51,51);
+    color: rgb(0,204,255);
+}
+footer a.top i {
+    font-size: 25px;
+}
+/* == END FOOTER STYLING == */
 
 /* == START RESPONSIVE STYLING ==  */
+@media only screen and (min-width: 1800px) {
+    #text_slider h1 {
+        font-size: 60px;
+        text-indent: 50px;
+    }
+    .icon-menu {
+        font-size: 25px
+    }
+
+} 
+
+
 @media only screen and (max-width: 1150px) {
     .aboutContent {
         width: 100%;
@@ -447,10 +488,6 @@ input {
         display: block;
     }
 
-.gallery .row img {
-    margin: 20px auto;
-    display: block;
-}
 
 }
 @media only screen and (max-width: 1000px) {
@@ -463,22 +500,11 @@ input {
         font-size: 40px;
         text-indent: 0;
     }
+    footer a.top i {
+        font-size: 30px;
+    }
 }
-@media only screen and (max-width: 700px) {
-    #smallLogo {
-        display: inline-block;
-        padding: 0;
-        margin: 0 auto;
-        width: 25%;
-        height: 25%;
-    }
-    #logo {
-        display: none;
-    }
-    #date,
-    #clock {
-        display: none;
-    }
+@media only screen and (max-width: 800px) {
     .row {
         width: 100%;
     }
@@ -489,6 +515,7 @@ input {
         margin: 15px auto;
         display: block;
         width: 50%;
+        padding: 1.5%;
     }
     #text_slider {
         width: 50%;
@@ -508,7 +535,7 @@ input {
         display: none;
     }
     .contactInfo {
-        font-size: 15px;
+        font-size: 18px;
         width: 100%;
     }
     .contactInfo div {
@@ -517,6 +544,37 @@ input {
     #quote {
         font-size: 2em;
         margin-top: 25%;
+    }
+    
+}
+
+@media only screen and (max-width: 500px) {
+    #smallLogo {
+        display: inline-block;
+        padding: 0;
+        margin: 0 auto;
+        width: 25%;
+        height: 25%;
+    }
+    #logo {
+        display: none;
+    }
+    #date,
+    #clock {
+        display: none;
+    }
+    #text_slider h1 {
+        font-size: 25px;
+    }
+    .landingMessage a {
+        padding: 2%;
+        font-size: 14px;
+    }
+    footer a.top {
+        border: 1px solid white;
+    }
+    footer a.top i {
+        font-size: 40px;
     }
 }
 /* == END RESPONSIVE STYLING == */
