@@ -86,7 +86,7 @@ if (isset($_POST['submit'])) {
 }
 ?>
             <!--<label for="name">*Name:</label>-->
-            <input type="text" id="name" name="name" required="required" placeholder="Your Name"><br /><br />
+            <input type="text" id="name" name="name" required="required" placeholder="Your Name">
                     
            <!-- <label for="email">*Email:</label>-->
             <input name="email" id="email" type="email" required="required" placeholder="Your Email"><br /><br />
