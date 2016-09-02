@@ -505,11 +505,11 @@ footer a.top i {
         width: 100%;
     }
     #text_slider {
-        width: 80%;
+        width: 50%;
         margin: 0 auto;
     }
     #text_slider h1 {
-        font-size: 30px;
+        font-size: 25px;
     }
     .landingMessage {
         margin-top: 10%;
@@ -540,7 +540,10 @@ footer a.top i {
         font-size: 2em;
         margin-top: 25%;
     }
-    
+    #date,
+    #clock {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -552,10 +555,6 @@ footer a.top i {
         height: 25%;
     }
     #logo {
-        display: none;
-    }
-    #date,
-    #clock {
         display: none;
     }
     .landingMessage a {
