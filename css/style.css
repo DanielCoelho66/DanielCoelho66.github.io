@@ -523,7 +523,7 @@ footer a.top i {
         margin: 0 auto;
     }
     #text_slider h1 {
-        font-size: 30px;
+        font-size: 40px;
     }
     .contactContent {
         padding: 5%;
@@ -562,9 +562,6 @@ footer a.top i {
     #date,
     #clock {
         display: none;
-    }
-    #text_slider h1 {
-        font-size: 25px;
     }
     .landingMessage a {
         padding: 2%;
