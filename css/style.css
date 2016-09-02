@@ -472,8 +472,6 @@ footer a.top i {
     }
 
 } 
-
-
 @media only screen and (max-width: 1150px) {
     .aboutContent {
         width: 100%;
@@ -487,8 +485,6 @@ footer a.top i {
         float: none;
         display: block;
     }
-
-
 }
 @media only screen and (max-width: 1000px) {
     input:nth-of-type(3),
@@ -508,6 +504,13 @@ footer a.top i {
     .row {
         width: 100%;
     }
+    #text_slider {
+        width: 80%;
+        margin: 0 auto;
+    }
+    #text_slider h1 {
+        font-size: 30px;
+    }
     .landingMessage {
         margin-top: 10%;
     }
@@ -516,14 +519,6 @@ footer a.top i {
         display: block;
         width: 50%;
         padding: 1.5%;
-    }
-    #text_slider {
-        width: 50%;
-        height: 100px;
-        margin: 0 auto;
-    }
-    #text_slider h1 {
-        font-size: 40px;
     }
     .contactContent {
         padding: 5%;
