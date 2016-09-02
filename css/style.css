@@ -512,7 +512,7 @@ footer a.top i {
         font-size: 25px;
     }
     .landingMessage {
-        margin-top: 10%;
+        margin-top: 15%;
     }
     .landingMessage a {
         margin: 15px auto;
@@ -537,7 +537,7 @@ footer a.top i {
         margin: 5% 0;
     }
     #quote {
-        font-size: 2em;
+        font-size: 1.5em;
         margin-top: 25%;
     }
     #date,
