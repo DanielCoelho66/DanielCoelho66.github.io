@@ -539,7 +539,7 @@ footer a.top i {
     }
     #quote {
         font-size: 1.5em;
-        margin-top: 20%;
+        margin-top: 22%;
     }
     #date,
     #clock {
@@ -558,9 +558,17 @@ footer a.top i {
     #logo {
         display: none;
     }
+    div.about,
+    body.portfolio,
+    body.contact {
+        background: rgb(51,51,51);
+    }
     .landingMessage a {
         padding: 2%;
         font-size: 14px;
+    }
+    .portfolioContent {
+        border: 2px solid white;
     }
     footer a.top {
         border: 1px solid white;
