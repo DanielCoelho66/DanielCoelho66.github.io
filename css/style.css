@@ -558,6 +558,9 @@ footer a.top i {
     #logo {
         display: none;
     }
+    h2 {
+        margin-top: 30px;
+    }
     div.about,
     body.portfolio,
     body.contact {
