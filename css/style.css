@@ -243,11 +243,12 @@ body.about {
 
 /* == START PORTFOLIO PAGE STYLING ==  */
 body.portfolio {
-    background: url(../images/abstract-140898_1920.jpg) no-repeat center center fixed; 
+    background: url(../images/background-15.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    /*background-color: #00647D;*/
 }
 .portfolioContent { 
     margin: 20px auto; 
