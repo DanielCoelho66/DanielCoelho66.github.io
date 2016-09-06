@@ -573,6 +573,18 @@ footer a.top i {
     .portfolioContent {
         border: 2px solid white;
     }
+    .about h2 {
+        margin: 0 0 20% 0;
+    }
+    input {
+        padding: 2%;
+    }
+    #formSend {
+        padding: 4%;
+    } 
+    .contactInfo {
+        margin: 2%;
+    }
     footer a.top {
         border: 1px solid white;
     }
