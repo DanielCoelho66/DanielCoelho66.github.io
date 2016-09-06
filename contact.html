@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="decription" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="Daniel Coelho">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
         <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
@@ -12,12 +18,6 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
         <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBu0D-29eYCskZXqbCK2VwoUoz2LJnMELM"></script>
         <script type="text/javascript" src="js/app.js"></script>
-        <meta name="decription" content="">
-        <meta name="keywords" content="">
-        <meta name="author" content="Daniel Coelho">
-        <meta charset="utf-8">
-        <meta content="width=device-width, initial-scale=1" name="viewport">
-        <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <title>Daniel Coelho - Contact</title>
   </head>
   <body class="contact">
