@@ -471,7 +471,21 @@ footer a.top i {
     .icon-menu {
         font-size: 25px
     }
-
+} 
+@media only screen and (min-width: 1600px) {
+    #text_slider h1 {
+        font-size: 60px;
+        text-indent: 50px;
+    }
+    .landingMessage {
+        margin-top: 5%;
+    }
+    footer a.top i {
+        font-size: 20px;
+    }
+    #quote {
+        margin-top: 15%;
+    }
 } 
 @media only screen and (max-width: 1150px) {
     .aboutContent {
