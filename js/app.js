@@ -74,6 +74,23 @@ $(function() {
 
 // BACK TO TOP FUNCTION 
 
+$(function() {
+ //FIGCAPTION FUNCTION
+    $('figcaption').each(function() {
+        $(this).css('opacity', 0);
+        $(this).css('width', $(this).siblings('img').width());
+        $(this).parent().css('width', $(this).siblings('img').width());
+        $(this).parent().css('height', $(this).siblings('img').height());
+        $(this).css('display', 'block');
+    });
+
+    $('figure').hover(function() {
+        $(this).children('figcaption').stop().fadeTo(500, 1);
+    }, function() {
+        $(this).children('figcaption').stop().fadeTo(500, 0);
+    }); 
+});
+
 // function to generate a random quote
 // random quote generator inspired by http://www.computerhope.com/j15.htm
   $(function quoteGenerator() {
