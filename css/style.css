@@ -453,6 +453,11 @@ input {
     color: #6CC644;
     /*color: #0CF;*/
 }
+.contactContent span {
+	font-weight: 800;
+	font-size: 18px;
+	padding: 1%;
+}
 /* == END CONTACT PAGE STYLING ==  */
 
 /* == START FOOTER STYLING == */
