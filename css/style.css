@@ -516,7 +516,7 @@ footer a.top i {
         padding-top: 1%;
     }
     footer a.top i {
-        font-size: 10px;
+        font-size: 20px;
     }
     #quote {
         margin-top: 15%;
@@ -550,7 +550,7 @@ footer a.top i {
         padding: 2%;
     }
     footer a.top i {
-        font-size: 30px;
+        font-size: 20px;
     }
 }
 @media only screen and (max-width: 800px) {
@@ -600,7 +600,7 @@ footer a.top i {
         padding-top: 1.5%; 
     }
     footer a.top i {
-        font-size: 30px;
+        font-size: 20px;
     }
 }
 
