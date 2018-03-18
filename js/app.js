@@ -52,6 +52,23 @@ function todayDate() {
      document.getElementById("date"). innerHTML = dtString;
 }
 
+
+function myAge() {
+var birthday = new Date("4/11/1995");  
+var today = new Date();  
+var years = today.getFullYear() - birthday.getFullYear();  
+
+// Reset birthday to the current year.  
+birthday.setFullYear(today.getFullYear());  
+
+// If the user's birthday has not occurred yet this year, subtract 1.  
+if (today < birthday)  
+{  
+    years--;  
+}  
+document.getElementById("age"). innerHTML = years;
+}
+
 $(document).ready(main);
 
 // function for persistent nav and back to top button
