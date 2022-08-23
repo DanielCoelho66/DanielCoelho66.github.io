@@ -203,15 +203,16 @@ div.about {
     height:100%;
 }
 body.about {
-    background-color: #333;
+    background-color: #444;
 }
 .aboutContent { 
     margin: 20px auto 100px auto; 
     padding: 2%;
     color: white;
     line-height: 1.7;
-    width: 85%;
-    font-size: 16px;
+    width: 75%;
+    font-size: 17px;
+
 }
 .aboutContent p {
     width: 60%;
@@ -219,7 +220,7 @@ body.about {
 }
 .about h2 {
     text-align: left;
-    margin: 10% 0;
+    margin: 5% 0;
 }
 .profile_pic {    
     width: auto;
@@ -331,7 +332,7 @@ body.contact {
     background-size: cover;
 }
 .contact h2 {
-    line-height: 0.1;
+    line-height: 0.5;
 }
 .contactContent {
     padding: 4% 2%;
@@ -381,6 +382,7 @@ div#map {
 form {
     float: left;
     width: 100%;
+    padding: 1%;
 }
 input,
 textarea {
@@ -400,10 +402,10 @@ input:nth-of-type(3) {
     width: 25%;
     margin: 0;
 }
-textarea:focus,
+/* textarea:focus,
 input:focus {
-    border: 2px solid #0CF;
-}
+    
+} */
 textarea {
     width: 100%;
     margin-bottom: 20px;
@@ -480,20 +482,27 @@ footer a {
 }
 footer a.top {
     position: fixed;
-    bottom: 1em;
-    right: 2em;
+    bottom: 2em;
+    right: 4em;
     text-decoration: none;
     padding: 1%;
     height: 50px;
     width: 50px;
     display: none;
     border-radius: 50%;
+    border: 2px solid rgb(0,204,255);;
     background: rgb(51,51,51);
     color: rgb(0,204,255);
     margin: auto;
 }
 footer a.top i {
     font-size: 20px;
+    position: fixed;
+    bottom: 2.1em;
+    right: 3.5em;
+}
+footer a.top:active i {
+    transform: scale(0.9);
 }
 /* == END FOOTER STYLING == */
 
@@ -597,7 +606,7 @@ footer a.top i {
         display: none;
     }
     footer a.top {
-        padding-top: 1.5%; 
+        padding-top: 2%; 
     }
     footer a.top i {
         font-size: 20px;
@@ -642,8 +651,7 @@ footer a.top i {
         margin: 2%;
     }
     footer a.top {
-        border: 1px solid white;
-        padding-top: 2%; 
+        padding-top: 3%; 
     }
 }
 /* == END RESPONSIVE STYLING == */
